@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.Loader;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ using Microsoft.OpenApi.Models;
 
 namespace InspireApi
 {
+    [ExcludeFromCodeCoverage(Justification = "Used in entry point of software")]
     public class Startup
     {
         public Startup(IConfiguration configuration)
